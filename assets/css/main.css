@@ -1,0 +1,150 @@
+.container {
+  display: flex;
+  flex-flow: wrap row;
+  height: 100%;
+  background-color: #dcdcdc;
+  text-align: center;
+}
+.card-section {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.button-section {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.header-section,
+.footer-section {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.cards {
+  display: flex;
+  flex-flow: wrap row;
+}
+.cards > div {
+  height: 30vh;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  line-height: 30vh;
+  font-size: 15vh;
+  font-weight: 700;
+  color: #033;
+}
+.card1 {
+  background-color: #ffffff;
+}
+.card2 {
+  background-color: #efefef;
+}
+.card3 {
+  background-color: #bfbfbf;
+}
+.card4 {
+  background-color: #72c3dc;
+}
+.card5 {
+  background-color: #2b8ead;
+}
+.card6 {
+  background-color: #6f98a8;
+}
+.card7 {
+  background-color: #2f454e;
+}
+.card8 {
+  background-color: #333333;
+}
+.card9 {
+  background-color: #000000;
+}
+
+.button {
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.125rem;
+  background-color: #2b8ead;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 1rem auto;
+  min-width: 200px;
+  outline: none;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  box-shadow: inset 0px 1px 0px #2b8ead, 0px 5px 0px 0px #3e758c,
+    0px 10px 5px #999;
+  transition: box-shadow 0.25s;
+}
+.button:active {
+  top: 3px;
+  box-shadow: inset 0px 1px 0px #2b8ead, 0px 2px 0px 0px #3e758c,
+    0px 5px 3px #999;
+}
+
+@media screen and (max-width: 767px) {
+  .card-section {
+    order: 3;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .cards {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .cards > div {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    flex: 0 0 100%;
+    max-width: 100%;
+    border-left: solid 0.75rem;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .button-section {
+    order: 2;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .button {
+    display: inline-block;
+    min-width: 100px;
+    margin: 1rem;
+    letter-spacing: 0.0625rem;
+    padding: 0.5rem;
+  }
+  .footer-section {
+    order: 4;
+  }
+  .card1 {
+    border-left-color: #ffffff !important;
+  }
+  .card2 {
+    border-left-color: #efefef !important;
+  }
+  .card3 {
+    border-left-color: #bfbfbf !important;
+  }
+  .card4 {
+    border-left-color: #72c3dc !important;
+  }
+  .card5 {
+    border-left-color: #2b8ead !important;
+  }
+  .card6 {
+    border-left-color: #6f98a8 !important;
+  }
+  .card7 {
+    border-left-color: #2f454e !important;
+  }
+  .card8 {
+    border-left-color: #333333 !important;
+  }
+  .card9 {
+    border-left-color: #000000 !important;
+  }
+}
